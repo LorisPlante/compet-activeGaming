@@ -15,7 +15,7 @@ type Actu = {
 
 export async function generateStaticParams() {
   try {
-    const res = await fetch(`${process.env.START_URL}/actualites.json`);
+    const res = await fetch(`https://www.active-gaming.lorisplante.fr/actualites.json`);
     if (!res.ok) {
       throw new Error(`Failed to fetch data: ${res.status}`);
     }
@@ -30,7 +30,7 @@ export async function generateStaticParams() {
 
 async function getData(actualiteId: string) {
   try {
-    const res = await fetch(`${process.env.START_URL}/actualites.json`);
+    const res = await fetch(`https://www.active-gaming.lorisplante.fr/actualites.json`);
     if (!res.ok) {
       throw new Error(`Failed to fetch data: ${res.status}`);
     }

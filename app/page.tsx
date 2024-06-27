@@ -116,15 +116,20 @@ export default function Home() {
           <div className="w-full flex justify-around items-center">
             <div className="relative bg-[#eee] w-[26vw] sm:w-[15vw] h-[42vw] sm:h-[23vw] rounded-lg">
               <img src="/medias/img/png/logo_wow.png" alt="logo World of Woarcraft" className=" absolute bottom-1 sm:bottom-3 left-1 sm:left-3 w-1/2" />
-              <img src="/medias/img/png/visu_wow.png" alt="Personage du jeu World of Warcraft" className="absolute -bottom-[1vw] -right-[3vw] w-4/5" />
+              <img src="/medias/img/png/visu_wow.png" alt="Personage du jeu World of Warcraft" className="absolute -bottom-[1vw] -right-[3vw] w-4/5" aria-hidden="true" />
             </div>
             <div className="relative bg-[#eee] w-[26vw] sm:w-[15vw] h-[42vw] sm:h-[23vw] rounded-lg">
               <img src="/medias/img/png/logo_fortnite.png" alt="logo Fornite" className=" absolute bottom-1 sm:bottom-3 left-1 sm:left-3 w-1/2" />
-              <img src="/medias/img/png/visu_fortnite.png" alt="Personage du jeu Fortnite" className="absolute -bottom-[1.5vw] -right-[3vw] w-2/3" />
+              <img src="/medias/img/png/visu_fortnite.png" alt="Personage du jeu Fortnite" className="absolute -bottom-[1.5vw] -right-[3vw] w-2/3" aria-hidden="true" />
             </div>
             <div className="relative bg-[#eee] w-[26vw] sm:w-[15vw] h-[42vw] sm:h-[23vw] rounded-lg">
               <img src="/medias/img/png/logo_apex.png" alt="logo Apex Legends" className=" absolute bottom-1 sm:bottom-3 left-1 sm:left-3 w-1/2" />
-              <img src="/medias/img/png/visu_apex.png" alt="Arme fictive du jeu Apex Legends" className="absolute bottom-1/4 -right-[2.5vw] w-full scale-110 sm:scale-125" />
+              <img
+                src="/medias/img/png/visu_apex.png"
+                alt="Arme fictive du jeu Apex Legends"
+                className="absolute bottom-1/4 -right-[2.5vw] w-full scale-110 sm:scale-125"
+                aria-hidden="true"
+              />
             </div>
           </div>
           <a href="/telechargement" className="w-fit px-6 py-2 bg-button-reverse text-button-text-reverse rounded text-xl mt-11 font-custom-paragraph">
