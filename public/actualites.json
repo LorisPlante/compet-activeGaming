@@ -1,0 +1,44 @@
+{
+  "actus": [
+    {
+      "_id": 1,
+      "title": "La Beta d'Active Gaming est disponible !",
+      "date": "21.06.2024",
+      "desc": "ACTU 1 : Venez découvrir Active Gaming  et profitez de récompences en vous exercant !",
+      "url": "/medias/img/png/actus/actu1.png",
+      "alt": "Image d'un robot faisant des pompes"
+    },
+    {
+      "_id": 2,
+      "title": "La Beta d'Active Gaming est disponible !",
+      "date": "21.06.2024",
+      "desc": "ACTU 2 : Venez découvrir Active Gaming  et profitez de récompences en vous exercant !",
+      "url": "/medias/img/png/actus/actu2.png",
+      "alt": "Image d'un robot faisant des pompes"
+    },
+    {
+      "_id": 3,
+      "title": "La Beta d'Active Gaming est disponible !",
+      "date": "21.06.2024",
+      "desc": "ACTU 3 : Venez découvrir Active Gaming  et profitez de récompences en vous exercant !",
+      "url": "/medias/img/png/actus/actu3.png",
+      "alt": "Image d'un robot faisant des pompes"
+    },
+    {
+      "_id": 4,
+      "title": "La Beta d'Active Gaming est disponible !",
+      "date": "21.06.2024",
+      "desc": "ACTU 4 : Venez découvrir Active Gaming  et profitez de récompences en vous exercant !",
+      "url": "/medias/img/png/actus/actu4.png",
+      "alt": "Image d'un robot faisant des pompes"
+    },
+    {
+      "_id": 5,
+      "title": "La Beta d'Active Gaming est disponible !",
+      "date": "21.06.2024",
+      "desc": "ACTU 5 : Venez découvrir Active Gaming  et profitez de récompences en vous exercant !",
+      "url": "/medias/img/png/actus/actu5.png",
+      "alt": "Image d'un robot faisant des pompes"
+    }
+  ]
+}

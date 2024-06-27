@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url(/font/SpaceGrotesk-VariableFont_wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Ubuntu";
+    src: url(/font/Ubuntu-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Ubuntu";
+    src: url(/font/Ubuntu-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Ubuntu";
+    src: url(/font/Ubuntu-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Ubuntu";
+    src: url(/font/Ubuntu-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "OpenDyslexic3";
+    src: url(/font/OpenDyslexic3-Bold.ttf) format("truetype");
+  }
+}
+
+:root {
+  /* background */
+  --color-bg: #eeeeee;
+  --color-bg-reverse: #131212;
+  /* text */
+  --color-text: #131212;
+  --color-text-reverse: #eeeeee;
+  --color-text-secondary: #6a3aee;
+  /* border */
+  --border-clr: #131212;
+  --border-clr-reverse: #eeeeee;
+  --border-access: 0;
+  /* button */
+  --button-bg: #6a3aee;
+  --button-bg-reverse: #6a3aee;
+  --button-text: #eeeeee;
+  --button-text-reverse: #eeeeee;
+  /* newsletter */
+  --color-newsletter: #411bb6;
+  /* actualites */
+  --hover-actu: #222222;
+  /* links */
+  --links: #20b4f8;
+}
+
+[data-theme="theme1"] {
+  /* background */
+  --color-bg: #131212;
+  --color-bg-reverse: #131212;
+  /* text */
+  --color-text: #eeeeee;
+  --color-text-reverse: #eeeeee;
+  --color-text-secondary: #eeeeee;
+  /* border */
+  --border-clr: #eeeeee;
+  --border-clr-reverse: #eeeeee;
+  --border-access: 2px;
+  /* button */
+  --button-bg: #131212;
+  --button-bg-reverse: #eeeeee;
+  --button-text: #eeeeee;
+  --button-text-reverse: #131212;
+  /* newsletter */
+  --color-newsletter: #131212;
+  /* actualites */
+  --hover-actu: #222222;
+  /* links */
+  --links: #eeeeee;
+}
+
+[data-theme="theme2"] {
+  /* background */
+  --color-bg: #000080;
+  --color-bg-reverse: #000080;
+  /* text */
+  --color-text: #ffff00;
+  --color-text-reverse: #ffff00;
+  --color-text-secondary: #ffff00;
+  /* border */
+  --border-clr: #ffff00;
+  --border-clr-reverse: #ffff00;
+  --border-access: 2px;
+  /* button */
+  --button-bg: #000080;
+  --button-bg-reverse: #ffff00;
+  --button-text: #ffff00;
+  --button-text-reverse: #000080;
+  /* newsletter */
+  --color-newsletter: #000080;
+  /* actualites */
+  --hover-actu: #00004b;
+  /* links */
+  --links: #ffff00;
+}
+
+[data-font-theme="default"] {
+  --font-family-titre: "Space Grotesk";
+  --font-family-paragraph: "Ubuntu";
+}
+
+[data-font-theme="font1"] {
+  --font-family-titre: "OpenDyslexic3";
+  --font-family-paragraph: "OpenDyslexic3";
+}
+
+[data-interligne-theme="default"] {
+  --interligne-custom: normal;
+}
+
+[data-interligne-theme="interligne1"] {
+  --interligne-custom: 1.7;
+}
+
+[data-font-theme="font1"][data-interligne-theme="interligne1"] {
+  --interligne-custom: 2.3;
+}
+
+* {
+  scroll-margin-top: 130px;
+  scroll-behavior: smooth;
+}
+
+body * a {
+  display: block;
+}
+
+body * {
+  line-height: var(--interligne-custom);
+}
+
+#newsletterBanner {
+  position: relative;
+  height: 39vh;
+  z-index: 20;
+}
+
+#newsletterBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--button-bg);
+  background-image: linear-gradient(to right, var(--color-newsletter) 1px, transparent 1px), linear-gradient(to bottom, var(--color-newsletter) 1px, transparent 1px);
+  background-size: 3vh 3vh;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.actu:hover {
+  background-color: var(--hover-actu);
+}
